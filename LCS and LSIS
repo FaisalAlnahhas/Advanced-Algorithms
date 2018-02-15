@@ -364,13 +364,10 @@ int main(int argc, char *argv[])
     clock_t start2, end2;
     double cpu_time_used2;
     start2 = clock();
-    printf("hi1\n");
-    positions(vertical2, horizontal);
-    printf("hi11\n");
+    //positions(vertical2, horizontal);
     int n;
     int *y,*bsTabC,*bsTabI,*C,*j2;
     int i2,k,LISlength;
-    printf("hi2\n");
     
     // Get input sequence
     //scanf("%d",&n);
@@ -379,17 +376,14 @@ int main(int argc, char *argv[])
     bsTabI=(int*) malloc((n+1)*sizeof(int));
     C=(int*) malloc((n+1)*sizeof(int));
     j2=(int*) malloc((n+1)*sizeof(int));
-    printf("hi3\n");
     if (!y || !bsTabC || !bsTabI || !C || !j2)
     {
         printf("malloc fail %d\n",__LINE__);
         exit(0);
     }
-    printf("hi4\n");
     for (i2=1;i2<=n;i2++)
         vertical2[i2] = y[i2]+1;
         //scanf("%d",y+i2);
-    printf("hi5\n");
     // Initialize table for binary search for DP
     bsTabC[0]=(-999999);  // Must be smaller than all input values.
     bsTabI[0]=0;          // Index of predecessor (0=grounded)
