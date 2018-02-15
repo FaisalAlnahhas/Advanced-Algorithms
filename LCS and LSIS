@@ -1,5 +1,7 @@
 //A lot of this code is reused from http://ranger.uta.edu/~weems/NOTES2320/cse2320.html in LSIS and LCS files
 //http://ranger.uta.edu/~weems/NOTES5311/LAB/LAB1SPR18/ the assignment
+// LSIS code from: http://ranger.uta.edu/~weems/NOTES2320/LSIS.c
+// LCD code from: http://ranger.uta.edu/~weems/NOTES2320/LCS.c
 //  lab1.c
 //  Note: this code is incomplete and doesn't run
 //
