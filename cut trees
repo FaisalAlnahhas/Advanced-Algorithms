@@ -14,7 +14,7 @@
 #define WHITE 0
 #define GRAY 1
 #define BLACK 2
-#define MAX_NODES 1000
+#define MAX_NODES 3000
 #define oo 1000000000
 #define True 1
 #define False 0
@@ -186,7 +186,7 @@ void cut_tree()
         for (i = 0; i < n; i++)
             if(i!=s && color[i] == BLACK && p[i] == t) p[i] = s;
         
-        if(color[t] == BLACK)
+        if(color[p[t]] == BLACK)
         {
             p[s] = p[t];
             p[t] = s;
@@ -196,9 +196,7 @@ void cut_tree()
     }
     
     for(j = 1; j < n; j++)
-    {
         printf("%d %d %d\n", j, p[j], fl[j]);
-    }
 }
 
 int main (int argc, char *argv[]) {
